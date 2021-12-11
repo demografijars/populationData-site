@@ -131,7 +131,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20210926012347">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20211211203406">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -518,7 +518,7 @@ data-event-label="high"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Година&quot;},{&quot;name&quot;:&quot;UNIT_MEASURE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Мјерна јединица&quot;},{&quot;name&quot;:&quot;SEX&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Оба пола&quot;,&quot;M&quot;,&quot;Ж&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Пол&quot;},{&quot;name&quot;:&quot;AGE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;,&quot;11&quot;,&quot;12&quot;,&quot;13&quot;,&quot;14&quot;,&quot;15&quot;,&quot;16&quot;,&quot;17&quot;,&quot;18&quot;,&quot;19&quot;,&quot;20&quot;,&quot;21&quot;,&quot;22&quot;,&quot;23&quot;,&quot;24&quot;,&quot;25&quot;,&quot;26&quot;,&quot;27&quot;,&quot;28&quot;,&quot;29&quot;,&quot;30&quot;,&quot;31&quot;,&quot;32&quot;,&quot;33&quot;,&quot;34&quot;,&quot;35&quot;,&quot;36&quot;,&quot;37&quot;,&quot;38&quot;,&quot;39&quot;,&quot;40&quot;,&quot;41&quot;,&quot;42&quot;,&quot;43&quot;,&quot;44&quot;,&quot;45&quot;,&quot;46&quot;,&quot;47&quot;,&quot;48&quot;,&quot;49&quot;,&quot;50&quot;,&quot;51&quot;,&quot;52&quot;,&quot;53&quot;,&quot;54&quot;,&quot;55&quot;,&quot;56&quot;,&quot;57&quot;,&quot;58&quot;,&quot;59&quot;,&quot;60&quot;,&quot;61&quot;,&quot;62&quot;,&quot;63&quot;,&quot;64&quot;,&quot;65&quot;,&quot;66&quot;,&quot;67&quot;,&quot;68&quot;,&quot;69&quot;,&quot;70&quot;,&quot;71&quot;,&quot;72&quot;,&quot;73&quot;,&quot;74&quot;,&quot;75&quot;,&quot;76&quot;,&quot;77&quot;,&quot;78&quot;,&quot;79&quot;,&quot;80&quot;,&quot;81&quot;,&quot;82&quot;,&quot;83&quot;,&quot;84&quot;,&quot;85+&quot;,&quot;Unknown&quot;,&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Старосна доб&quot;},{&quot;name&quot;:&quot;ADMIN_AREA&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Федерација БиХ&quot;,&quot;Република Српска&quot;,&quot;Брчко дистрикт БиХ&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Административно подручје&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Вриједност&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Година&quot;},{&quot;name&quot;:&quot;UNIT_MEASURE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Мјерна јединица&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Вриједност&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -559,8 +559,740 @@ data-event-label="high"
       <caption>Становништво по ентитетима, према доби и полу</caption>
       <thead>
         
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">{"NUMBER"=>"Број", "UNIT_MEASURE"=>"Мјерна јединица"}</th>
+        
+        
       </thead>
       <tbody>
+        
+        <tr>
+          
+          
+          <td>1971</td>
+          
+          
+          
+          <td>15.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1972</td>
+          
+          
+          
+          <td>14.5</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1973</td>
+          
+          
+          
+          <td>13.7</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1974</td>
+          
+          
+          
+          <td>13.8</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1975</td>
+          
+          
+          
+          <td>13.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1976</td>
+          
+          
+          
+          <td>13.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1977</td>
+          
+          
+          
+          <td>12.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1978</td>
+          
+          
+          
+          <td>11.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1979</td>
+          
+          
+          
+          <td>10.9</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1980</td>
+          
+          
+          
+          <td>10.9</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1981</td>
+          
+          
+          
+          <td>10.8</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1982</td>
+          
+          
+          
+          <td>11.2</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1983</td>
+          
+          
+          
+          <td>10.6</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1984</td>
+          
+          
+          
+          <td>10.8</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1985</td>
+          
+          
+          
+          <td>10.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1986</td>
+          
+          
+          
+          <td>9.9</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1987</td>
+          
+          
+          
+          <td>9.7</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1988</td>
+          
+          
+          
+          <td>9.6</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1989</td>
+          
+          
+          
+          <td>8.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1990</td>
+          
+          
+          
+          <td>8.7</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1991</td>
+          
+          
+          
+          <td>7.8</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1996</td>
+          
+          
+          
+          <td>5.9</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1997</td>
+          
+          
+          
+          <td>5.5</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>4.5</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>3.7</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>2.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>1.9</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>1.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>0.9</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>0.7</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>0.1</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>0.2</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>-0.3</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>-0.1</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>-0.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>-0.8</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>-0.8</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>-1.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>-1.6</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>-2.3</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>-1.8</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>-2.2</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>-2.4</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>-3.0</td>
+          
+          
+          
+          <td class="table-value">%</td>
+          
+          
+        </tr>
         
       </tbody>
     </table>
@@ -1134,8 +1866,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/UNFPACOBIH/populationData-data/commit/7ee4f39a6b6d74843b8916df33c95744f5d9050a" target="_blank">
-                2021-07-10: see changes on GitHub <span class="visuallyhidden"></span>
+              <a href="https://github.com/UNFPACOBIH/populationData-data/commit/2e0d603ccfe1d3de848932706e6d0e2d82c789db" target="_blank">
+                2021-12-11: see changes on GitHub <span class="visuallyhidden"></span>
               </a>
             
 
@@ -1852,12 +2584,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Претраживање';</script>
 
-<script src='/assets/js/sdg.js?v=20210926012347'></script>
+<script src='/assets/js/sdg.js?v=20211211203406'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20210926012347"></script><script>
+    <script src="/assets/js/custom.js?v=20211211203406"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
