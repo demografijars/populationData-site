@@ -7,7 +7,7 @@
         
         {
           "id": "1-1-1",
-          "title": "Population by age and sex",
+          "title": "Vital statistics by sex (live births, deaths, natural change)",
           "description": "",
           "keywords": "",
           "href": "/1-1-1",
@@ -15,47 +15,15 @@
         },
         {
           "id": "1-1-2",
-          "title": "Population by entity, age and sex",
+          "title": "Natural growth rate",
           "description": "",
           "keywords": "",
           "href": "/1-1-2",
           "status": "complete"
         },
         {
-          "id": "1-1-3",
-          "title": "Population by age groups and sex",
-          "description": "",
-          "keywords": "",
-          "href": "/1-1-3",
-          "status": "complete"
-        },
-        {
-          "id": "1-1-4",
-          "title": "Population by entity, age groups and sex",
-          "description": "",
-          "keywords": "",
-          "href": "/1-1-4",
-          "status": "complete"
-        },
-        {
-          "id": "1-1-5",
-          "title": "Population by municipality, age groups and sex",
-          "description": "",
-          "keywords": "",
-          "href": "/1-1-5",
-          "status": "complete"
-        },
-        {
-          "id": "1-1-6",
-          "title": "Population pyramid by age groups and sex",
-          "description": "",
-          "keywords": "",
-          "href": "/1-1-6",
-          "status": "complete"
-        },
-        {
           "id": "1-2-1",
-          "title": "Vital statistics by sex",
+          "title": "Crude birth rate",
           "description": "",
           "keywords": "",
           "href": "/1-2-1",
@@ -63,31 +31,87 @@
         },
         {
           "id": "1-2-2",
-          "title": "Natural growth rate",
+          "title": "Total fertility rate",
           "description": "",
           "keywords": "",
           "href": "/1-2-2",
           "status": "complete"
         },
         {
+          "id": "1-2-3",
+          "title": "Age-specific fertility rate",
+          "description": "",
+          "keywords": "",
+          "href": "/1-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-4",
+          "title": "Sex ratio at birth",
+          "description": "",
+          "keywords": "",
+          "href": "/1-2-4",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-5",
+          "title": "Births by teenage mothers by age group",
+          "description": "",
+          "keywords": "",
+          "href": "/1-2-5",
+          "status": "complete"
+        },
+        {
           "id": "1-3-1",
-          "title": "Dependency ratios by sex",
+          "title": "Crude death rate",
           "description": "",
           "keywords": "",
           "href": "/1-3-1",
           "status": "complete"
         },
         {
+          "id": "1-3-2",
+          "title": "Infant (up to 12 months of age) mortality by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/1-3-2",
+          "status": "complete"
+        },
+        {
+          "id": "1-3-3",
+          "title": "Infant (up to 12 months of age) mortality rate",
+          "description": "",
+          "keywords": "",
+          "href": "/1-3-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-3-4",
+          "title": "Deaths by cause of death and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/1-3-4",
+          "status": "complete"
+        },
+        {
           "id": "1-3-5",
-          "title": "global_indicators.1-3-5-title",
+          "title": "Stillbirths by sex",
           "description": "",
           "keywords": "",
           "href": "/1-3-5",
           "status": "complete"
         },
         {
+          "id": "1-3-6",
+          "title": "Stillbirth rate",
+          "description": "",
+          "keywords": "",
+          "href": "/1-3-6",
+          "status": "complete"
+        },
+        {
           "id": "1-4-1",
-          "title": "Crude birth rate",
+          "title": "Average age of mothers at first birth",
           "description": "",
           "keywords": "",
           "href": "/1-4-1",
@@ -95,7 +119,7 @@
         },
         {
           "id": "1-4-2",
-          "title": "Total Fertility rate",
+          "title": "Average age of population by sex",
           "description": "",
           "keywords": "",
           "href": "/1-4-2",
@@ -103,7 +127,7 @@
         },
         {
           "id": "1-4-3",
-          "title": "Age-specific fertility rate",
+          "title": "Average age at death by sex",
           "description": "",
           "keywords": "",
           "href": "/1-4-3",
@@ -111,7 +135,7 @@
         },
         {
           "id": "1-4-4",
-          "title": "Sex ratio at birth",
+          "title": "Average age at first marriage by sex",
           "description": "",
           "keywords": "",
           "href": "/1-4-4",
@@ -119,7 +143,7 @@
         },
         {
           "id": "1-4-5",
-          "title": "Births by teenage mothers by age group",
+          "title": "Average age at the time of divorce by sex",
           "description": "",
           "keywords": "",
           "href": "/1-4-5",
@@ -127,39 +151,15 @@
         },
         {
           "id": "1-5-1",
-          "title": "Average age of mothers at first birth",
+          "title": "Life expectancy at birth by sex",
           "description": "",
           "keywords": "",
           "href": "/1-5-1",
           "status": "complete"
         },
         {
-          "id": "1-5-2",
-          "title": "Average age of population by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/1-5-2",
-          "status": "complete"
-        },
-        {
-          "id": "1-5-3",
-          "title": "Average age at death by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/1-5-3",
-          "status": "complete"
-        },
-        {
-          "id": "1-5-4",
-          "title": "Average age at first marriage by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/1-5-4",
-          "status": "complete"
-        },
-        {
           "id": "1-6-1",
-          "title": "Crude death rate",
+          "title": "Marriages",
           "description": "",
           "keywords": "",
           "href": "/1-6-1",
@@ -167,7 +167,7 @@
         },
         {
           "id": "1-6-2",
-          "title": "Infant (up to 12 months of age) mortality by sex",
+          "title": "Marriage rate",
           "description": "",
           "keywords": "",
           "href": "/1-6-2",
@@ -175,23 +175,87 @@
         },
         {
           "id": "1-6-3",
-          "title": "Infant (up to 12 months of age) mortality rate",
+          "title": "Divorces",
           "description": "",
           "keywords": "",
           "href": "/1-6-3",
           "status": "complete"
         },
         {
+          "id": "1-6-4",
+          "title": "Divorce rate",
+          "description": "",
+          "keywords": "",
+          "href": "/1-6-4",
+          "status": "complete"
+        },
+        {
           "id": "1-7-1",
-          "title": "Life expectancy at birth by sex",
+          "title": "Projected population by age and sex",
           "description": "",
           "keywords": "",
           "href": "/1-7-1",
           "status": "complete"
         },
         {
+          "id": "1-7-2",
+          "title": "Projected population by age groups and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/1-7-2",
+          "status": "complete"
+        },
+        {
+          "id": "1-7-3",
+          "title": "Projected dependency ratios by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/1-7-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-7-4",
+          "title": "Projected vital statistics by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/1-7-4",
+          "status": "complete"
+        },
+        {
+          "id": "1-7-5",
+          "title": "Projected crude birth rate",
+          "description": "",
+          "keywords": "",
+          "href": "/1-7-5",
+          "status": "complete"
+        },
+        {
+          "id": "1-7-6",
+          "title": "Projected crude death rate",
+          "description": "",
+          "keywords": "",
+          "href": "/1-7-6",
+          "status": "complete"
+        },
+        {
+          "id": "1-7-7",
+          "title": "Projected average age of population",
+          "description": "",
+          "keywords": "",
+          "href": "/1-7-7",
+          "status": "complete"
+        },
+        {
+          "id": "1-7-8",
+          "title": "Projected population pyramid",
+          "description": "",
+          "keywords": "",
+          "href": "/1-7-8",
+          "status": "complete"
+        },
+        {
           "id": "1-8-1",
-          "title": "Marriages",
+          "title": "Population estimates by age and sex",
           "description": "",
           "keywords": "",
           "href": "/1-8-1",
@@ -199,7 +263,7 @@
         },
         {
           "id": "1-8-2",
-          "title": "Marriage rate",
+          "title": "Population estimates by age groups and sex",
           "description": "",
           "keywords": "",
           "href": "/1-8-2",
@@ -207,26 +271,10 @@
         },
         {
           "id": "1-8-3",
-          "title": "Divorces",
+          "title": "Population estimates by city/municipality, age groups and sex",
           "description": "",
           "keywords": "",
           "href": "/1-8-3",
-          "status": "complete"
-        },
-        {
-          "id": "1-8-4",
-          "title": "Divorce rate",
-          "description": "",
-          "keywords": "",
-          "href": "/1-8-4",
-          "status": "complete"
-        },
-        {
-          "id": "1-9-1",
-          "title": "Households",
-          "description": "",
-          "keywords": "",
-          "href": "/1-9-1",
           "status": "complete"
         }]
     }
@@ -234,12 +282,12 @@
   {
     "goal": {
       "id": "2",
-      "title": "POPULATION PROJECTIONS",
+      "title": "CENSUS",
       "indicators": [
         
         {
           "id": "2-1-1",
-          "title": "Projected population by age and sex",
+          "title": "Population by age and sex",
           "description": "",
           "keywords": "",
           "href": "/2-1-1",
@@ -247,7 +295,7 @@
         },
         {
           "id": "2-1-2",
-          "title": "Projected population by age groups and sex",
+          "title": "Population by age groups and sex",
           "description": "",
           "keywords": "",
           "href": "/2-1-2",
@@ -255,7 +303,7 @@
         },
         {
           "id": "2-1-3",
-          "title": "Projected dependency ratios by sex",
+          "title": "Population by municipality, age groups and sex",
           "description": "",
           "keywords": "",
           "href": "/2-1-3",
@@ -263,7 +311,7 @@
         },
         {
           "id": "2-1-4",
-          "title": "Projected vital statistics by sex",
+          "title": "Population pyramid",
           "description": "",
           "keywords": "",
           "href": "/2-1-4",
@@ -271,7 +319,7 @@
         },
         {
           "id": "2-1-5",
-          "title": "Projected crude birth rate",
+          "title": "Female population aged 15 years and over by number of live-born children",
           "description": "",
           "keywords": "",
           "href": "/2-1-5",
@@ -279,26 +327,74 @@
         },
         {
           "id": "2-1-6",
-          "title": "Projected crude death rate",
+          "title": "Dependency ratios by sex",
           "description": "",
           "keywords": "",
           "href": "/2-1-6",
           "status": "complete"
         },
         {
-          "id": "2-1-7",
-          "title": "Projected average age of population",
+          "id": "2-2-1",
+          "title": "Population by city/municipality, ethnicity/nationality and sex",
           "description": "",
           "keywords": "",
-          "href": "/2-1-7",
+          "href": "/2-2-1",
           "status": "complete"
         },
         {
-          "id": "2-1-8",
-          "title": "Projected population pyramid",
+          "id": "2-2-2",
+          "title": "Population by city/municipality, religion and sex",
           "description": "",
           "keywords": "",
-          "href": "/2-1-8",
+          "href": "/2-2-2",
+          "status": "complete"
+        },
+        {
+          "id": "2-2-3",
+          "title": "Population by city/municipality, mother tongue and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/2-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "2-3-1",
+          "title": "Households by city/municipality and number of members",
+          "description": "",
+          "keywords": "",
+          "href": "/2-3-1",
+          "status": "complete"
+        },
+        {
+          "id": "2-3-2",
+          "title": "Households by city/municipality and agricultural activity",
+          "description": "",
+          "keywords": "",
+          "href": "/2-3-2",
+          "status": "complete"
+        },
+        {
+          "id": "2-4-1",
+          "title": "Population over 10 years of age by city/municipality, literacy and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/2-4-1",
+          "status": "complete"
+        },
+        {
+          "id": "2-4-2",
+          "title": "Population over 15 years of age by city/municipality, educational attainment and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/2-4-2",
+          "status": "complete"
+        },
+        {
+          "id": "2-5-1",
+          "title": "Population with disabilities by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/2-5-1",
           "status": "complete"
         }]
     }
@@ -311,7 +407,7 @@
         
         {
           "id": "3-1-1",
-          "title": "Deaths by cause of death and sex",
+          "title": "Infant (up to 12 months of age) mortality by sex",
           "description": "",
           "keywords": "",
           "href": "/3-1-1",
@@ -319,7 +415,7 @@
         },
         {
           "id": "3-1-2",
-          "title": "Deaths by cause of death per 100,000 population",
+          "title": "Infant (up to 12 months of age) mortality rate",
           "description": "",
           "keywords": "",
           "href": "/3-1-2",
@@ -327,7 +423,7 @@
         },
         {
           "id": "3-1-3",
-          "title": "Stillbirths",
+          "title": "Deaths by cause of death and sex",
           "description": "",
           "keywords": "",
           "href": "/3-1-3",
@@ -335,15 +431,23 @@
         },
         {
           "id": "3-1-4",
-          "title": "Stilbirth rate",
+          "title": "Stillbirths by sex",
           "description": "",
           "keywords": "",
           "href": "/3-1-4",
           "status": "complete"
         },
         {
+          "id": "3-1-5",
+          "title": "Stillbirth rate",
+          "description": "",
+          "keywords": "",
+          "href": "/3-1-5",
+          "status": "complete"
+        },
+        {
           "id": "3-2-1",
-          "title": "Cervical cancer",
+          "title": "Cervical cancer incidence",
           "description": "",
           "keywords": "",
           "href": "/3-2-1",
@@ -351,7 +455,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Cervical cancer per 100,000 female population",
+          "title": "Breast cancer incidence",
           "description": "",
           "keywords": "",
           "href": "/3-2-2",
@@ -359,7 +463,7 @@
         },
         {
           "id": "3-2-3",
-          "title": "Breast cancer",
+          "title": "Cervical cancer incidence per 100,000 female population",
           "description": "",
           "keywords": "",
           "href": "/3-2-3",
@@ -367,7 +471,7 @@
         },
         {
           "id": "3-2-4",
-          "title": "Breast cancer per 100,000 female population",
+          "title": "Breast cancer incidence per 100,000 female population",
           "description": "",
           "keywords": "",
           "href": "/3-2-4",
@@ -447,7 +551,7 @@
         },
         {
           "id": "3-5-3",
-          "title": "Medical doctors in public institutions",
+          "title": "Medical doctors employed in health care institutions",
           "description": "",
           "keywords": "",
           "href": "/3-5-3",
@@ -455,7 +559,7 @@
         },
         {
           "id": "3-5-4",
-          "title": "Medical doctors in public institutions per 100,000 population",
+          "title": "Medical doctors employed in health care institutions per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/3-5-4",
@@ -463,7 +567,7 @@
         },
         {
           "id": "3-5-5",
-          "title": "General practitioners",
+          "title": "Family medicine doctors employed in health care institutions",
           "description": "",
           "keywords": "",
           "href": "/3-5-5",
@@ -471,7 +575,7 @@
         },
         {
           "id": "3-5-6",
-          "title": "Population per general practitioner",
+          "title": "Family medicine doctors employed in health care institutions per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/3-5-6",
@@ -479,10 +583,26 @@
         },
         {
           "id": "3-5-7",
-          "title": "Midviwes",
+          "title": "Midwives employed in health care institutions",
           "description": "",
           "keywords": "",
           "href": "/3-5-7",
+          "status": "complete"
+        },
+        {
+          "id": "3-5-8",
+          "title": "Specialist doctors employed in health care institutions",
+          "description": "",
+          "keywords": "",
+          "href": "/3-5-8",
+          "status": "complete"
+        },
+        {
+          "id": "3-5-9",
+          "title": "Specialist doctors employed in health care institutions per 100,000 population",
+          "description": "",
+          "keywords": "",
+          "href": "/3-5-9",
           "status": "complete"
         },
         {
@@ -519,7 +639,7 @@
         },
         {
           "id": "3-7-1",
-          "title": "Persons with disabilities by age groups and sex",
+          "title": "Other",
           "description": "",
           "keywords": "",
           "href": "/3-7-1",
@@ -530,15 +650,55 @@
   {
     "goal": {
       "id": "4",
-      "title": "VIOLENCE",
+      "title": "SOCIAL PROTECTION",
       "indicators": [
         
         {
           "id": "4-1-1",
-          "title": "Violence against women after the age of 15 (ever)",
+          "title": "Social protection beneficiaries by type of beneficiary",
           "description": "",
           "keywords": "",
           "href": "/4-1-1",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-2",
+          "title": "Social protection beneficiaries by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/4-1-2",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-3",
+          "title": "Social protection beneficiaries by type of institution",
+          "description": "",
+          "keywords": "",
+          "href": "/4-1-3",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-4",
+          "title": "Social protection services by type of beneficiary",
+          "description": "",
+          "keywords": "",
+          "href": "/4-1-4",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-5",
+          "title": "Child allowance beneficiaries",
+          "description": "",
+          "keywords": "",
+          "href": "/4-1-5",
+          "status": "complete"
+        },
+        {
+          "id": "4-2-1",
+          "title": "Social protection institutions by type",
+          "description": "",
+          "keywords": "",
+          "href": "/4-2-1",
           "status": "complete"
         }]
     }
@@ -551,7 +711,7 @@
         
         {
           "id": "5-1-1",
-          "title": "Population over 15 years of age by educational attainment and sex",
+          "title": "Preschool institutions by ownership",
           "description": "",
           "keywords": "",
           "href": "/5-1-1",
@@ -559,7 +719,7 @@
         },
         {
           "id": "5-1-2",
-          "title": "Population enrolled in formal educational institutions by sex and type of educational institution",
+          "title": "Children in preschool institutions by sex",
           "description": "",
           "keywords": "",
           "href": "/5-1-2",
@@ -567,7 +727,7 @@
         },
         {
           "id": "5-1-3",
-          "title": "Population 25-64 years of age enrolled in non-formal, adult education by age groups and sex",
+          "title": "Children in nurseries by sex",
           "description": "",
           "keywords": "",
           "href": "/5-1-3",
@@ -575,18 +735,194 @@
         },
         {
           "id": "5-1-4",
-          "title": "Illiterate population over 10 years of age by age groups and sex",
+          "title": "Childcare workers in preschool institutions by sex",
           "description": "",
           "keywords": "",
           "href": "/5-1-4",
           "status": "complete"
         },
         {
-          "id": "5-1-5",
+          "id": "5-2-1",
+          "title": "Children at the beginning of school year by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-2-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-2-2",
+          "title": "Children who completed primary school by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-2-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-2-3",
+          "title": "Teachers in primary schools by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "5-3-1",
+          "title": "Children at the beginning of school year by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-3-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-3-2",
+          "title": "Children at the beginning of school year by type of school",
+          "description": "",
+          "keywords": "",
+          "href": "/5-3-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-3-3",
+          "title": "Children who completed high school by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-3-3",
+          "status": "complete"
+        },
+        {
+          "id": "5-3-4",
+          "title": "Children who completed high school by type of school",
+          "description": "",
+          "keywords": "",
+          "href": "/5-3-4",
+          "status": "complete"
+        },
+        {
+          "id": "5-3-5",
+          "title": "Teachers in high schools by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-3-5",
+          "status": "complete"
+        },
+        {
+          "id": "5-4-1",
+          "title": "Enrolled in undergraduate studies by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-4-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-4-2",
+          "title": "Graduated students by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-4-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-4-3",
+          "title": "Graduated students by type of education",
+          "description": "",
+          "keywords": "",
+          "href": "/5-4-3",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-1",
+          "title": "Enrolled in master and specialist studies by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-5-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-2",
+          "title": "Enrolled in master and specialist studies by type of education",
+          "description": "",
+          "keywords": "",
+          "href": "/5-5-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-3",
+          "title": "Students graduated in master and special studies by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-5-3",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-4",
+          "title": "Students graduated in master and special studies by type of education",
+          "description": "",
+          "keywords": "",
+          "href": "/5-5-4",
+          "status": "complete"
+        },
+        {
+          "id": "5-6-1",
+          "title": "Enrolled in doctoral studies by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-6-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-6-2",
+          "title": "Enrolled in doctoral studies by type of education",
+          "description": "",
+          "keywords": "",
+          "href": "/5-6-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-6-3",
+          "title": "Students graduated in doctoral studies by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-6-3",
+          "status": "complete"
+        },
+        {
+          "id": "5-6-4",
+          "title": "Students graduated in doctoral studies by type of education",
+          "description": "",
+          "keywords": "",
+          "href": "/5-6-4",
+          "status": "complete"
+        },
+        {
+          "id": "5-7-1",
+          "title": "Population 25-64 years of age enrolled in non-formal, adult education by age groups and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-7-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-7-2",
           "title": "Population 15-24 years of age not in employment, education or training (NEET) by sex",
           "description": "",
           "keywords": "",
-          "href": "/5-1-5",
+          "href": "/5-7-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-7-3",
+          "title": "Population over 10 years of age by city/municipality, literacy and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-7-3",
+          "status": "complete"
+        },
+        {
+          "id": "5-7-4",
+          "title": "Population over 15 years of age by city/municipality, educational attainment and sex",
+          "description": "",
+          "keywords": "",
+          "href": "/5-7-4",
           "status": "complete"
         }]
     }
@@ -594,12 +930,12 @@
   {
     "goal": {
       "id": "6",
-      "title": "ECONOMIC, POVERTY AND LABOUR FORCE",
+      "title": "ECONOMY",
       "indicators": [
         
         {
           "id": "6-1-1",
-          "title": "Gross Domestic Product - Total (millions)",
+          "title": "Gross Domestic Product (GDP) - Total (millions)",
           "description": "",
           "keywords": "",
           "href": "/6-1-1",
@@ -607,7 +943,7 @@
         },
         {
           "id": "6-1-2",
-          "title": "Gross Domestic Product - Per capita",
+          "title": "Gross Domestic Product (GDP) - Per capita",
           "description": "",
           "keywords": "",
           "href": "/6-1-2",
@@ -615,50 +951,74 @@
         },
         {
           "id": "6-1-3",
-          "title": "Real GDP growth",
+          "title": "Real Gross Domestic Product (GDP) growth",
           "description": "",
           "keywords": "",
           "href": "/6-1-3",
           "status": "complete"
-        },
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "7",
+      "title": "LABOUR FORCE AND LIVING STANDARD",
+      "indicators": [
+        
         {
-          "id": "6-2-1",
-          "title": "Households living in relative poverty",
-          "description": "",
-          "keywords": "",
-          "href": "/6-2-1",
-          "status": "complete"
-        },
-        {
-          "id": "6-2-2",
-          "title": "Population living in relative poverty by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/6-2-2",
-          "status": "complete"
-        },
-        {
-          "id": "6-3-1",
+          "id": "7-1-1",
           "title": "Labour force participation rate (Percentage of active population (labour force) in working age population (15-64) by age group and sex)",
           "description": "",
           "keywords": "",
-          "href": "/6-3-1",
+          "href": "/7-1-1",
           "status": "complete"
         },
         {
-          "id": "6-3-2",
+          "id": "7-1-2",
           "title": "Employment-to-population ratio (Percentage of employed population in working age population (15-64) by age group and sex)",
           "description": "",
           "keywords": "",
-          "href": "/6-3-2",
+          "href": "/7-1-2",
           "status": "complete"
         },
         {
-          "id": "6-3-3",
+          "id": "7-1-3",
           "title": "Unemployment rate (Percentage of unemployed population in active population (labour force) by age group and sex)",
           "description": "",
           "keywords": "",
-          "href": "/6-3-3",
+          "href": "/7-1-3",
+          "status": "complete"
+        },
+        {
+          "id": "7-2-1",
+          "title": "Households living in relative poverty",
+          "description": "",
+          "keywords": "",
+          "href": "/7-2-1",
+          "status": "complete"
+        },
+        {
+          "id": "7-2-2",
+          "title": "Population living in relative poverty by sex",
+          "description": "",
+          "keywords": "",
+          "href": "/7-2-2",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "8",
+      "title": "VIOLENCE",
+      "indicators": [
+        
+        {
+          "id": "8-1-1",
+          "title": "Violence against women after the age of 15 (all types)",
+          "description": "",
+          "keywords": "",
+          "href": "/8-1-1",
           "status": "complete"
         }]
     }

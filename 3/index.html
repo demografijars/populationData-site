@@ -129,7 +129,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20211213012552">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20211213222706">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -427,7 +427,7 @@ data-event-label="high"
                 3.1.1
             </span>
             <a href="/3-1-1">
-                Deaths by cause of death and sex
+                Infant (up to 12 months of age) mortality by sex
             </a>
         </div>
         
@@ -441,7 +441,7 @@ data-event-label="high"
                 3.1.2
             </span>
             <a href="/3-1-2">
-                Deaths by cause of death per 100,000 population
+                Infant (up to 12 months of age) mortality rate
             </a>
         </div>
         
@@ -455,7 +455,7 @@ data-event-label="high"
                 3.1.3
             </span>
             <a href="/3-1-3">
-                Stillbirths
+                Deaths by cause of death and sex
             </a>
         </div>
         
@@ -469,7 +469,21 @@ data-event-label="high"
                 3.1.4
             </span>
             <a href="/3-1-4">
-                Stilbirth rate
+                Stillbirths by sex
+            </a>
+        </div>
+        
+
+        
+        
+        
+
+        <div class="col-md-12  goal-indicator">
+            <span class="indicator-card-number">
+                3.1.5
+            </span>
+            <a href="/3-1-5">
+                Stillbirth rate
             </a>
         </div>
         
@@ -495,7 +509,7 @@ data-event-label="high"
                 3.2.1
             </span>
             <a href="/3-2-1">
-                Cervical cancer
+                Cervical cancer incidence
             </a>
         </div>
         
@@ -509,7 +523,7 @@ data-event-label="high"
                 3.2.2
             </span>
             <a href="/3-2-2">
-                Cervical cancer per 100,000 female population
+                Breast cancer incidence
             </a>
         </div>
         
@@ -523,7 +537,7 @@ data-event-label="high"
                 3.2.3
             </span>
             <a href="/3-2-3">
-                Breast cancer
+                Cervical cancer incidence per 100,000 female population
             </a>
         </div>
         
@@ -537,7 +551,7 @@ data-event-label="high"
                 3.2.4
             </span>
             <a href="/3-2-4">
-                Breast cancer per 100,000 female population
+                Breast cancer incidence per 100,000 female population
             </a>
         </div>
         
@@ -549,7 +563,7 @@ data-event-label="high"
             <label class="hidden-md hidden-lg">Target</label>
             3.3
         </span>
-        Sexually-transmitted diseases (STDs)
+        Sexually-transmitted diseases
     </div>
     <div class="indicator-cards single-indicators col-md-12 row no-gutters">
         
@@ -713,7 +727,7 @@ data-event-label="high"
                 3.5.3
             </span>
             <a href="/3-5-3">
-                Medical doctors in public institutions
+                Medical doctors employed in health care institutions
             </a>
         </div>
         
@@ -727,7 +741,7 @@ data-event-label="high"
                 3.5.4
             </span>
             <a href="/3-5-4">
-                Medical doctors in public institutions per 100,000 population
+                Medical doctors employed in health care institutions per 100,000 population
             </a>
         </div>
         
@@ -741,7 +755,7 @@ data-event-label="high"
                 3.5.5
             </span>
             <a href="/3-5-5">
-                General practitioners
+                Family medicine doctors employed in health care institutions
             </a>
         </div>
         
@@ -755,7 +769,7 @@ data-event-label="high"
                 3.5.6
             </span>
             <a href="/3-5-6">
-                Population per general practitioner
+                Family medicine doctors employed in health care institutions per 100,000 population
             </a>
         </div>
         
@@ -769,7 +783,35 @@ data-event-label="high"
                 3.5.7
             </span>
             <a href="/3-5-7">
-                Midviwes
+                Midwives employed in health care institutions
+            </a>
+        </div>
+        
+
+        
+        
+        
+
+        <div class="col-md-12  goal-indicator">
+            <span class="indicator-card-number">
+                3.5.8
+            </span>
+            <a href="/3-5-8">
+                Specialist doctors employed in health care institutions
+            </a>
+        </div>
+        
+
+        
+        
+        
+
+        <div class="col-md-12  goal-indicator">
+            <span class="indicator-card-number">
+                3.5.9
+            </span>
+            <a href="/3-5-9">
+                Specialist doctors employed in health care institutions per 100,000 population
             </a>
         </div>
         
@@ -849,7 +891,7 @@ data-event-label="high"
             <label class="hidden-md hidden-lg">Target</label>
             3.7
         </span>
-        Persons with disabilities
+        Other
     </div>
     <div class="indicator-cards single-indicators col-md-12 row no-gutters">
         
@@ -863,7 +905,7 @@ data-event-label="high"
                 3.7.1
             </span>
             <a href="/3-7-1">
-                Persons with disabilities by age groups and sex
+                Other
             </a>
         </div>
         
@@ -916,12 +958,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20211213012552'></script>
+<script src='/assets/js/sdg.js?v=20211213222706'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20211213012552"></script><script>
+    <script src="/assets/js/custom.js?v=20211213222706"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
