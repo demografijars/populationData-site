@@ -319,7 +319,7 @@
         },
         {
           "id": "2-1-5",
-          "title": "Žensko stanovništvo prema gradu/općini, i ukupnom broju živorođene djece",
+          "title": "Ženska populacija u dobi od 15 i više godina prema broju živorođene djece",
           "description": "",
           "keywords": "",
           "href": "/bs/2-1-5",
@@ -591,7 +591,7 @@
         },
         {
           "id": "3-5-8",
-          "title": "Broj doktora specijalista zaposlenih u ustanovama za pružanje zdravstvene zaštite",
+          "title": "Broj doktora medicine specijalista zaposlenih u ustanovama za pružanje zdravstvene zaštite",
           "description": "",
           "keywords": "",
           "href": "/bs/3-5-8",
@@ -599,7 +599,7 @@
         },
         {
           "id": "3-5-9",
-          "title": "Broj doktora specijalista medicine uposlenih u ustanovama za pružanje zdravstvene zaštite na 100.000 stanovnika",
+          "title": "Broj doktora medicine specijalista zaposlenih u ustanovama za pružanje zdravstvene zaštite na 100.000 stanovnika",
           "description": "",
           "keywords": "",
           "href": "/bs/3-5-9",
@@ -719,7 +719,7 @@
         },
         {
           "id": "5-1-2",
-          "title": "global_indicators.5-2-title",
+          "title": "Broj djece u predškolskim ustanovama prema spolu",
           "description": "",
           "keywords": "",
           "href": "/bs/5-1-2",
