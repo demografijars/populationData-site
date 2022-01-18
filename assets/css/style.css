@@ -2841,7 +2841,7 @@ header {
     min-height: 80px; }
   header .navbar-brand {
     display: block;
-    max-width: 210px; }
+    max-width: 230px; }
     @media screen and (max-width: 420) {
       header .navbar-brand {
         max-width: 170px; } }
