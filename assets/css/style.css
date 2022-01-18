@@ -2841,7 +2841,10 @@ header {
     min-height: 80px; }
   header .navbar-brand {
     display: block;
-    max-width: 170px; }
+    max-width: 210px; }
+    @media screen and (max-width: 420) {
+      header .navbar-brand {
+        max-width: 170px; } }
     header .navbar-brand:focus {
       outline: unset !important; }
   header .navbar ul.navbar-nav > li > a {
