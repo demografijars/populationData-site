@@ -182,7 +182,11 @@ header {
     
     .navbar-brand {
         display: block;
-        max-width: 170px;
+        max-width: 210px;
+
+        @media screen and (max-width: 420) {
+           max-width: 170px;
+        }
 
         &:focus {
             outline: unset !important;
