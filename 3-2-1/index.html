@@ -131,7 +131,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220122011830">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220122182340">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -1028,24 +1028,24 @@ opensdg.chartConfigAlter(function(config, info) {
 <script>
    // For line charts, add the vertical line hover functionality.
    opensdg.chartConfigAlter(function (config, info) {
+      //set chart to start from minimum value, and default pointStyle and size
+      if (config.data.datasets[0] != null) {
+         let minStart = config.data.datasets[0].data[0];
+         config.options.scales.yAxes[0].ticks.suggestedMin = minStart;
+         config.data.datasets[0].pointStyle = "circle";
+         config.data.datasets[0].borderWidth = 2;
+
+         //remove legend from single label indicator
+         if (config.data.datasets[0].label === 'BiH') {
+            delete config.data.datasets[0].label;
+         };
+      }
 
       var overrides = {
          options: {
             tooltips: {
                intersect: true,
                axis: 'y'
-            },
-            scales: {
-               yAxes: [{
-                  ticks: {
-                     beginAtZero: false
-                  }
-               }],
-               XAxes: [{
-                  ticks: {
-                     beginAtZero: false
-                  }
-               }]
             },
          },
          plugins: [{
@@ -2080,12 +2080,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20220122011830'></script>
+<script src='/assets/js/sdg.js?v=20220122182340'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20220122011830"></script><script>
+    <script src="/assets/js/custom.js?v=20220122182340"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
