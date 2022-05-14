@@ -21,7 +21,7 @@ languages:
   - en
   - lat
   - cir
-#
+
 # That's enough for the Quick Start! The remaining settings can be configured later.
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
