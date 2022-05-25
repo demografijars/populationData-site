@@ -2954,7 +2954,7 @@ div#main-content h2 {
 html:lang(cir) #main-content h1 {
   font-size: 55px; }
 
-html:lang(hr) #main-content h1, html:lang(bs) #main-content h1 {
+html:lang(lat) #main-content h1 {
   font-size: 59px; }
 
 @media (max-width: 991px) {
