@@ -104,7 +104,7 @@ var translations = {
 
         
     <title>
-        Stopa ukupnog fertiliteta - Podaci o demografskoj otpornosti
+        Stopa ukupnog fertiliteta - Indikatori za ciljeve održivog razvoja
     </title>
 
 
@@ -131,7 +131,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220525134700">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220525140120">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -368,10 +368,10 @@ data-event-label="high"
       </div>
       <div class="variable-options">
         <fieldset>
-          <legend class="sr-only"> - <%=translations.t(fieldItem.field)%></legend>
+          <legend class="sr-only">Podkategorije - <%=translations.t(fieldItem.field)%></legend>
           <div>
-            <button data-type="select"></button>
-            <button data-type="clear"></button>
+            <button data-type="select">Označi sve</button>
+            <button data-type="clear">Obriši sve</button>
           </div>
           <% 
           //sort numerically by value
@@ -399,10 +399,10 @@ data-event-label="high"
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Dostupno kada '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' je označeno
         </div>
         <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
-          
+          Nema opcija zbog gornjih filtera
         </div>
       <% }%>
 
@@ -412,9 +412,9 @@ data-event-label="high"
 
 <script type="text/template" id="units_template">
   <% if(units.length) { %>
-    <h4></h4>
+    <h4>Mjerna jedinica</h4>
     <fieldset>
-      <legend class="sr-only"></legend>
+      <legend class="sr-only">Mjerna jedinica</legend>
       <% _.each(units, function(unitsItem, index) { %>
         <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
@@ -425,9 +425,9 @@ data-event-label="high"
 
 <script type="text/template" id="series_template">
   <% if(serieses.length) { %>
-    <h4></h4>
+    <h4>Varijabla</h4>
     <fieldset>
-      <legend class="sr-only"></legend>
+      <legend class="sr-only">Varijabla</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
@@ -436,9 +436,9 @@ data-event-label="high"
   <% } %>
 </script>
 
-<script>translations['indicator'] = {"Female":"Žensko","Male":"Muško","data_not_available":"Ovi podaci nisu na raspolaganju. Odaberite dodatne podkategorije.","dataset_size_warning":"Grafikon može prikazati podatke samo ukoliko se izabere do 40 varijabli. Molimo vas da isključite neke varijable iz menija na lijevoj strani kako bi se grafikon mogao adekvatno prikazati.","national_metadata":"Metapodaci","national_metadata_blurb":" ","next":"Sljedeći indikator","previous":"Prethodni indikator","sources":"Izvori podataka","unit":"Jedinica"};</script>
+<script>translations['indicator'] = {"Female":"Žensko","Male":"Muško","chart":"Grafikon","clear_all":"Obriši sve","clear_selections":"Obriši označeno","data_not_available":"Ovi podaci nisu na raspolaganju. Odaberite dodatne podkategorije.","dataset_size_warning":"Grafikon može prikazivati ​​podatke za do 40 varijabli. Uklonite neke odabire u lijevim izbornicima za pravilnu prezentaciju.","download_chart":"Preuzmite grafikon CSV","download_chart_image":"Preuzmi sliku grafikona","download_chart_image_title":"Preuzmi grafikon kao sliku","download_csv":"Preuzmi CSV","download_csv_title":"Preuzmi kao CSV","download_geojson":"Preuzmi GeoJSON","download_geojson_title":"Preuzmi kao GeoJSON","download_headline":"Preuzmite CSV naslov","download_headline_title":"Preuzmi podatke o naslovu kao CSV","download_source":"Preuzmi izvor CSV","download_source_sdmx":"Preuzmi izvor SDMX","download_source_sdmx_title":"Preuzmi izvorne podatke kao SDMX","download_source_title":"Preuzmi izvorne podatke kao CSV","download_table":"Preuzmite tabelu CSV","edit":"Uredi","edit_data":"Uredi podatke","edit_metadata":"Uredi metapodatke","footnote":"Fusnota","geographical_area":"Geografsko područje","global_metadata":"Metapodaci","legend_help":"Kliknite na legendu kako biste uklonili pojedine linije s grafikona.","loading":"Učitavanje","loading_map":"Učitavanje mape","map":"Mapa","national_metadata":"Metapodaci","national_metadata_blurb":" ","next":"Sljedeći stat","no_data_hint":"Nema opcija zbog gornjih filtera","previous":"Prethodni stat","select_all":"Označi sve","series":"Varijabla","series_help":"Odaberite kategorije iz  padajućeg menija ispod kako biste vidjeli različite podjele podataka. Neki neće biti dostupni dok se ne odabere viši nivo.","source":"Izvor","sources":"Izvori","sub_categories":"Podkategorije","table":"Tabela","unit":"Jedinica","unit_of_measurement":"Mjerna jedinica","units_type":"Tip jedinice","variable_hint":"Dostupno kada '%field' je označeno","view_indicator_list":"Pogledajte listu indikatora ovog cilja"};</script>
 
-<script>translations['data'] = {"10_and_more":"10 i više","2_members":"2 člana","3_members":"3 člana","4_members":"4 člana","5_members":"5 članova","6_members":"6 članova","7_members":"7 članova","8+_members":"8 i više članova","ACTIVITY_RATES":"Stope aktivnosti","ADMIN_AREA":"Administrativno područje","AGE":"Starosna dob","AGE_GROUP_OF_WOMEN":"Starosna grupa žena","AGE_OF_MOTHER":"Starost majke","AGRICULTURAL_ACTIVITY":"Poljoprivredna djelatnost","Advanced_schools_faculty_academy_university":"Visoka škola / fakultet / akademija / univerzitet","Adventist":"Adventistička","Age":"Starosna dob","Agnostic":"Agnostik","Albanian":"Albanski","Atheist":"Ateist","BD":"Brčko distrikt BiH","BIRTH":"Rađanje","BIRTHS":"Vitalna statistika","BIRTHS_AND_DEATHS":"Rođeni i umrli","Bosniak":"Bošnjački","Bosnian":"Bosanski","Bosnian_Croatian":"Bosanski-hrvatski","Bosnian_Croatian_Serbian":"Bosanski-hrvatski-srpski","Bosnian_Herzegovinian":"Bosansko-hercegovački","Bosnian_Serbian_Croatian":"Bosanski-srpski-hrvatski","CAUSE_OF_DEATH":"Uzrok smrti (prema šiframa bolesti po MKB-10)","Catholic":"Katolička","Christian":"Hrišćanska","Croat":"Hrvat","Croatian":"Hrvatski","Croato_Serbian":"Hrvatsko-srpski","DEATH":"Smrt","DEATHS":"Umrli","DIVORCES":"Razvod braka","EDUCATION":"Nivo obrazovanja","ENROLMENT":"Vrsta obrazovne ustanove","Ethnicity_national_affiliation":"Etnička/nacionalna pripadnost","FBIH":"Federacija BiH","FERTILITY_RATE":"Stopa fertiliteta","FORM_OF_VIOLENCE":"Oblik nasilja","GRAND_total":"Sveukupno","German":"Njemački","Greek_Catholic":"Grkokatolička","High_school":"Srednja škola","Higher_school_and_first_grade_of_faculty":"Viša škola i prva godina fakulteta","Highest_education_atainment":"Najviši dostignuti stepen obrazovanja","INFANT_MORTALITY":"Smrtnost dojenčadi (do navršene prve godine života)","Illiterate":"Nepismen","Incomplete_primary_education":"Nezavršeno osnovno obrazovanje","Islam":"Islamska","LITERACY":"Pismenost","LIVE_BIRTH":"Živorođeni","LIVE_BORN_CHILDREN":"Živorođena djeca","Literate":"Pismen","MARRIAGES":"Brakovi","MARRIAGE_BIRTH":"Brak i porođaj","MARTIAL_STATUS":"Bračno stanje","Month":"Mjesec","Mother_tongue":"Maternji jezik","Municipality":"Opština","Muslim":"Musliman","NATURAL_CHANGE":"Prirodno kretanje","NO_PER_1000_LIVE_BIRTHS":"Broj na 1.000 živorođenih","NUMBER":"Broj","NUMBER_OF_HOUSEHOLDS_BY_HOUSEHOLD_SIZE":"Veličina domaćinstva","No_education":"Neobrazovan","Orthodox":"Pravoslavna","Others":"Drugo","POVERTY_RATE":"Stopa siromaštva","Performing_agricultural_activity":"Obavljanje poljoprivredne djelatnosti","Performing_agricultural_activity_and_selling_agricultural_products_in_the_market":"Obavljanje poljoprivredne djelatnosti i prodaja poljoprivrednih proizvoda na tržištu","Post-secondary_school_specialization":"Specijalizacija nakon završene srednje škole","Primary_school":"Osnovna škola","Protestant":"Protestantska","QUANTITY":"Količina","RS":"Republika Srpska","Religion":"Religija","Roman_Catholic":"Rimokatolička","Romani":"Romski","STILLBIRTH_RATE":"Stopa mrtvorođenih","SURVEY_IMPLEMENTED_BY":"Istraživanje provedeno od strane","Serbian":"Srpski","Serbo_Croatian":"Srpsko-hrvatski","Sex":"Pol","TYPE_OF_DEPENDENCY_RATIO":"Vrsta koeficijenta zavisnosti","TYPE_OF_FAMILY/HOUSEHOLD":"Vrsta porodice / domaćinstva","Turkish":"Turski","Type":"Vrsta","UNIT_MEASURE":"Mjerna jedinica","UNIT_MEASUREMENT":"Mjerna jedinica","USD":"USD","Ukranian":"Ukrajinski","Undeclared":"Neopredijeljen","VITAL_STATISTICS":"Vitalna statistika","Value":"Vrijednost","YEARS":"Godine","Year":"Godina","_%":"% od ukupne vrijednosti","_%_labour":"% radne snage","_ALL":"Svi","_T":"Ukupno","active_labour_force":"Aktivni (radna snaga) kao % radno sposobnog stanovništva","adult_beneficiaries":"Odrasli korisnici","adult_beneficiaries_social_protection_institutions_for_children_youth_and_adults_with_mental_and_physical_disabilities":"Ustanove socijalne zaštite za djecu, mlade i odrasle s mentalnim i fizičkim invaliditetom","advanced_schools_faculty_academy_university":"Visoko obrazovanje / fakultet / akademija / univerzitet","age_specific_fertility_rates":"Stope fertiliteta prema dobi","all":"Svi","art_schools":"Umjetničke škole","average_number_of_hh_members":"Prosječan broj članova domaćinstva","berkovici":"Berkovići","bileca":"Bileća","boys_to_girls":"Broj dječaka na 100 djevojčica","bratunac":"Bratunac","brod":"Brod","cajnice":"Čajniče","celinac":"Čelinac","census_pyramid":"Cenzus","certain_conditions_originating":"(P00-P96) Određena stanja nastala u perinatalnom periodu","children_pre_woman":"Broj djece po ženi od 15-49 starosti","congenital_malformations_deformations":"(Q00-Q99) Kongenitalne malformacije, deformiteti i hromosomske abnormalnosti","consensual_couple_with_children":"Par koji živi u vanbračnoj zajednici sa djecom","consensual_couple_without_children":"Par koji živi u vanbračnoj zajednici bez djece","contraceptive_prevalence_rate_(modern_methods)":"Stopa prevalence kontracepcije (upotrebom savremenih metoda)","contraceptive_prevalence_rate_(total)":"Ukupna stopa prevalence kontracepcije","contraceptive_prevalence_rate_(traditional_methods)":"Stopa prevalence kontracepcije (upotrebom tradicionalnih metoda)","crude_birth_rate":"Stopa nataliteta","crude_death_rate":"Stopa mortaliteta","crude_death_rate_1000":"Stopa smrtnosti na 1.000 stanovnika","deaths":"Umrli","did_not_give_birth":"Nisu rađale","diseases_of_the_blood":"(D50-D89) Bolesti krvi i krvotvornih organa, kao i poremećaji imunološkog sistema","diseases_of_the_circulatory":"(I00-I99) Bolesti cirkulatornog sistema","diseases_of_the_digestive":"(K00-K93) Bolesti digestivnog sistema","diseases_of_the_eye":"(H00-H93) Bolesti oka, uha i adneksa","diseases_of_the_genitourinary":"(N00-N99) Bolesti genitourinarnog sistema","diseases_of_the_musculoskeletal":"(M00-M99) Bolesti muskuloskeletnog sistema i vezivnog tkiva","diseases_of_the_nervous":"(G00-G99) Bolesti nervnog sistema","diseases_of_the_respiratory":"(J00-J99) Bolesti respiratornog sistema","diseases_of_the_skin":"(L00-L99) Bolesti kože i potkožnog tkiva","divorce_rate_(per_1,000_marriages)":"Stopa razvoda brakova (na 1.000 brakova)","divorced":"Razveden/a","donji_zabar":"Donji Žabar","employed_as_of_working":"Zaposleni kao % radno sposobnog stanovništva","endocrine_metabolic_and_nutritional":"(E00-E90) Endokrine bolesti, bolesti ishrane i bolesti metabolizma","enrolment_in_high_school_education":"Srednja škola","enrolment_in_higher_education":"Visoko obrazovanje / univerzitet","enrolment_in_pre_school":"Predškolski odgoj i obrazovanje","enrolment_in_primary_school_education":"Osnovna škola","estimated_number_of_population":"Procjenjeni broj stanovnika","external_causes_of_mortality":"(V01-Y98) Spoljni uzroci smrtnosti","factors_influencing_health_status":"(Z00-Z99) Faktori koji utiču na zdravstveno stanje i kontakt sa zdravstvenom službom","father_with_children":"Otac sa djecom","female_population":"Žensko stanovništvo","females_in_poverty":"Žene u siromaštvu (%)","foca":"Foča","gacko":"Gacko","gave_birth":"Rađale","grad_banja_luka":"Grad Banja Luka","grad_bijeljina":"Grad Bijeljina","grad_derventa":"Grad Derventa","grad_doboj":"Grad Doboj","grad_gradiska":"Grad Gradiška","grad_istocno_sarajevo":"Grad Istočno Sarajevo","grad_prijedor":"Grad Prijedor","grad_trebinje":"Grad Trebinje","grad_zvornik":"Grad Zvornik","gymnasium":"Gimnazija","han_pijesak":"Han Pijesak","health_indicators":"Indikatori zdravlja","high_schools_for_children_with_special_needs":"Srednje škole za djecu s posebnim potrebama","higher_school_and_first_grade_of_faculty":"Više obrazovanje i prvi stepen fakulteta","homes_for_children_and_youth_without_parental_care":"Domovi za djecu i mlade bez roditeljskog staranja","households_in_poverty":"Domaćinstva u siromaštvu (%)","inactive_as_of_working":"Neaktivni kao % radno sposobnog stanovništva","incomplete_primary_education":"Nepotpuno osnovno obrazovanje","infant_(up_to_12_months_of_age)_mortality_rate":"Stopa smrtnosti dojenčadi (do navršene prve godine života)","infectious_and_parasitic":"(A00-B99) Zarazne i parazitske bolesti","informal_union":"Vanbračna zajednica","injuries_poisoning_and_consequences":"(S00-T98) Povrede, trovanja i druge posljedice dejstava spoljnih faktora","institutional_deliveries":"Porođaj u zdravstvenoj ustanovi","istocna_ilidza":"Istočna Ilidža","istocni_drvar":"Istočni Drvar","istocni_mostar":"Istočni Mostar","istocni_stari_grad":"Istočni Stari Grad","istocno_novo_sarajevo":"Istočno Novo Sarajevo","jehovah_s_witnesses":"Jehovini svjedoci","jezero":"Jezero","kalinovik":"Kalinovik","knezevo":"Kneževo","kostajnica":"Kostajnica","kotor_varos":"Kotor Varoš","kozarska_dubica":"Kozarska Dubica","krupa_na_uni":"Krupa Na Uni","kupres":"Kupres","laktasi":"Laktaši","live_births":"Živorođeni","ljubinje":"Ljubinje","lopare":"Lopare","male_population":"Muško stanovništvo","males_in_poverty":"Muškarci u siromaštvu (%)","marriage_rate":"Stopa sklopljenih brakova","married":"U braku","married_couple_with_children":"Bračni par sa djecom","married_couple_without_children":"Bračni par bez djece","mean_age":"Srednja dob","mental_and_behavioural_disorders":"(F00-F99) Duševni poremećaji i poremećaji ponašanja","milici":"Milići","minor_beneficiaries":"Maloljetni korisnici","modrica":"Modriča","mother_with_children":"Majka sa djecom","mrkonjic_grad":"Mrkonjić Grad","natural_increase":"Prirodni priraštaj","neoplasms":"(C00-C97,D00-D48) Neoplazme","never_married":"Nikad nisu sklopili brak","nevesinje":"Nevesinje","no_education":"Bez obrazovanja","no_per_1000_marriages":"Broj na 1.000 brakova","non-family/multi-person_households":"Višečlano domaćinstvo/bez porodice","non-family/single_households":"Jednočlano domaćinstvo/bez porodice","novi_grad":"Novi Grad","novo_gorazde":"Novo Goražde","number_birth_rate":"Stopa nataliteta na 1.000 stanovnika","number_of_beds_in_hospitals":"Broj bolničkih kreveta","number_of_beds_in_hospitals_per_100000_population":"Stopa bolničkih kreveta na 100.000 stanovnika","number_of_caesarean_sections":"Broj carskih rezova","number_of_caesarean_sections_per_1000_live_births":"Stopa carskih rezova na 1.000 živorođenih","number_of_divorces":"Broj razvoda brakova","number_of_general_practitioners":"Broj doktora opšte medicine","number_of_infant_deaths":"Broj smrtnih slučajeva dojenčadi","number_of_marriages":"Broj sklopljenih brakova","number_of_medical_doctors_providing_health_care_in_public_institutions":"Broj doktora medicine koji pružaju zdravstvene usluge u javnim ustanovama","number_of_medical_doctors_providing_health_care_in_public_institutions_per_100000_population":"Stopa doktora medicine koji pružaju zdravstvene usluge u javnim ustanovama na 100.000 stanovnika","number_of_midwives":"Broj babica","number_of_new_cases_of_AIDS_clinically_diagnosed":"Broj novih slučajeva klinički utvrđenog AIDS-a","number_of_new_cases_of_HIV":"Broj novih slučajeva HIV infekcije","number_of_new_cases_of_HIV_per_100000_population":"Stopa novih slučajeva HIV infekcije na 100.000 stanovnika","number_of_new_cases_of_cervical_cancer":"Broj novih slučajeva raka grlića materice","number_of_new_cases_of_cervical_cancer_per_100000_female_population":"Stopa novih slučajeva raka grlića materice na 100.000 žena","number_of_new_cases_of_female_breast_cancer":"Broj novih slučajeva raka dojke kod žena","number_of_new_cases_of_female_breast_cancer_per_100000":"Stopa novih slučajeva raka dojke kod žena na 100.000 žena","number_of_new_cases_of_gonorrhea":"Broj novih slučajeva gonoreje","number_of_new_cases_of_syphilis":"Broj novih slučajeva sifilisa","number_of_population_per_general_practitioner":"Broj stanovnika na jednog doktora opšte medicine","number_of_stillbirths":"Broj mrtvorođenih","of_total_for_age_group":"% od ukupnog broja za starosnu grupu","osmaci":"Osmaci","ostra_luka":"Oštra Luka","pale":"Pale","pelagicevo":"Pelagićevo","per_1000":"Na 1.000 živorođenih","per_capita":"Po glavi stanovnika","persons_with_disabilities":"Lica s invaliditetom","petrovac":"Petrovac","petrovo":"Petrovo","population_in_poverty":"Stanovništvo u siromaštvu (%)","post_secondary_school_specialisation":"Specijalizacija nakon završene srednje škole","pregnancy_childbirth_and_the":"(O00-O99) Trudnoća, porođaj i postporođajni period","primary_school":"Osnovna škola","private":"Privatna","prnjavor":"Prnjavor","projection_pyramid":"Godina projekcije","public":"Javna","real_gdp_growth":"Rast realnog BDP-a","religion_schools":"Vjerske škole","republika_srpska":"Republika Srpska","ribnik":"Ribnik","rogatica":"Rogatica","rudo":"Rudo","samac":"Šamac","satisfied_demand_for_family_planning":"Zadovoljena potražnja za planiranjem porodice","school_year":"Školska godina","school_year_beginning":"Početak školske godine","school_year_end":"Kraj školske godine","secondary_school":"Srednja škola","sekovici":"Šekovići","single_household":"1 član","sipovo":"Šipovo","skilled_attendant_at_delivery":"Porođaj u prisustvu stručnog lica","social_welfare_institutions_for_adults":"Ustanove socijalne zaštite za odrasle","social_welfare_institutions_for_adults_with_disabilities":"Ustanove socijalne zaštite za odrasle osobe s invaliditetom","sokolac":"Sokolac","srbac":"Srbac","srebrenica":"Srebrenica","stanari":"Stanari","status_unknown":"Status nepoznat","symptoms_signs_and_abnormal":"(R00-R99) Simptomi, znakovi i abnormalni klinički i laboratorijski nalazi koji nisu drugdje klasifikovani","technical_schools":"Tehničke škole","teslic":"Teslić","total":"Ukupno","total_15":"Ukupno 15 i više","total_fertility_rate":"Stopa ukupnog fertiliteta","total_illiterate":"Ukupno nepismeni","total_millions":"Ukupno (u milionima)","trnovo":"Trnovo","type_of_institution":"Vrsta ustanove","ugljevik":"Ugljevik","unemployed_as_of_labour":"Nezaposleni kao % radne snage","unemployed_as_of_working":"Nezaposleni kao % radno sposobnog stanovništva","unknown":"Nepoznato","unmet_need_for_family_planning":"Neostvarena potreba za planiranjem porodice","visegrad":"Višegrad","vlasenica":"Vlasenica","vocational_schools":"Škole za stručno obrazovanje","vukosavlje":"Vukosavlje","widowed":"Udovac/udovica","women_who_have_experienced_any_form_of_violence_after_the_age_of_15_(ever)":"Žene koje su doživjele bilo koji oblik nasilja u dobi od 15 i više godina (bilo kada)"};</script>
+<script>translations['data'] = null;</script>
 
 
 <div class="container">
@@ -458,7 +458,7 @@ data-event-label="high"
     <div class="row">
       
       <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/lat/1" title="">
+        <a href="/lat/1" title="Pogledajte listu indikatora ovog cilja">
           <img src="https://pdo.rzs.rs.ba/assets/img/goals/lat/1.png" alt="global_goals.1-short -  1" id="goal-1" class="goal-icon-image goal-icon-image-png"/>
         </a>
       </div>
@@ -506,7 +506,7 @@ data-event-label="high"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Godina&quot;},{&quot;name&quot;:&quot;UNIT_MEASURE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Mjerna jedinica&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Vrijednost&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;UNIT_MEASURE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;UNIT_MEASURE&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -515,14 +515,14 @@ data-event-label="high"
   <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
     <div id="serieses"></div>
 <div class="pyramid-units">
-      <h4 class="census-pyramid">Cenzus</h4>
-      <h4 class="projection-pyramid">Godina projekcije</h4>
+      <h4 class="census-pyramid"></h4>
+      <h4 class="projection-pyramid"></h4>
 </div>
 <div id="units"></div>
 <div id="toolbar">
   <span id="series-help">
-    <h4></h4>
-    <p></p>
+    <h4>Podkategorije</h4>
+    <p>Odaberite kategorije iz  padajućeg menija ispod kako biste vidjeli različite podjele podataka. Neki neće biti dostupni dok se ne odabere viši nivo.</p>
   </span>
   <div id="fields">
     <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
@@ -538,9 +538,9 @@ data-event-label="high"
 
   <div id="datatables">
 
-    <a href="https://demografijars.github.io/populationData-data/lat/headline/1-2-2.csv" class="btn btn-primary btn-download" download="indicator_1-2-2.csv" tabindex="0" role="button"></a>
+    <a href="https://demografijars.github.io/populationData-data/lat/headline/1-2-2.csv" class="btn btn-primary btn-download" download="indicator_1-2-2.csv" tabindex="0" role="button">Preuzmite CSV naslov</a>
 
-    <a href="https://demografijars.github.io/populationData-data/lat/data/1-2-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_1-2-2.csv' tabindex='0' role='button'></a>
+    <a href="https://demografijars.github.io/populationData-data/lat/data/1-2-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_1-2-2.csv' tabindex='0' role='button'>Preuzmi izvor CSV</a>
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
@@ -573,7 +573,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -589,7 +589,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -605,7 +605,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -621,7 +621,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -637,7 +637,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -653,7 +653,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -669,7 +669,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -685,7 +685,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -701,7 +701,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -717,7 +717,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -733,7 +733,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -749,7 +749,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -765,7 +765,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -781,7 +781,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -797,7 +797,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -813,7 +813,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -829,7 +829,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -845,7 +845,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Broj djece po ženi od 15-49 starosti</td>
+          <td class="table-value">children_pre_woman</td>
           
           
         </tr>
@@ -856,7 +856,7 @@ data-event-label="high"
 
   <div id="datatableFooter">
     
-    <p>: RZS</p>
+    <p>Izvor: RZS</p>
     
     
     
@@ -881,14 +881,14 @@ data-event-label="high"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Chart tab"
- aria-describedby="table-alternative"></a>
+ aria-describedby="table-alternative">Grafikon</a>
   </li>
   <li role="presentation" class="nav-item">
     <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
-></a>
+>Tabela</a>
   </li></ul>
 
     <div class="tab-content data-view">
@@ -897,7 +897,7 @@ data-event-label="Change to Table tab"
 
 <div id="dataset-size-warning" style="display:none" role="alert">
     <i class="fa fa-bolt"><span class="sr-only"></span></i>
-    Grafikon može prikazati podatke samo ukoliko se izabere do 40 varijabli. Molimo vas da isključite neke varijable iz menija na lijevoj strani kako bi se grafikon mogao adekvatno prikazati.
+    Grafikon može prikazivati ​​podatke za do 40 varijabli. Uklonite neke odabire u lijevim izbornicima za pravilnu prezentaciju.
 </div>
 
 
@@ -1157,7 +1157,7 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>:</dt>
+        <dt>Izvor:</dt>
         <dd>RZS</dd>
         
 
@@ -1174,9 +1174,9 @@ opensdg.chartConfigAlter(function(config, info) {
         </div>
     </figure>
     <div id="chartSelectionDownload" class="clearfix">
-        <button id="btnSave" title=""
+        <button id="btnSave" title="Preuzmi grafikon kao sliku"
             class='btn btn-primary btn-download'>
-            
+            Preuzmi sliku grafikona
         </button>
     </div>
 </div>
@@ -1196,7 +1196,7 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>:</dt>
+        <dt>Izvor:</dt>
         <dd>RZS</dd>
         
 
@@ -1235,13 +1235,13 @@ data-event-label="Change to National Metadata tab"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
->Izvori podataka</a>
+>Izvori</a>
 </li>
 
 
   
   <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab"></a>
+    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Uredi</a>
   </li>
   
 </ul>
@@ -2086,11 +2086,11 @@ data-event-label="Change to Sources tab"
   
 
 
-  <a class="btn btn-primary" href="http://prose.io/#demografijars/populationData-data/edit/master/data/indicator_1-2-2.csv"></a>
+  <a class="btn btn-primary" href="http://prose.io/#demografijars/populationData-data/edit/master/data/indicator_1-2-2.csv">Uredi podatke</a>
   
 
   
-  <a class="btn btn-primary" href="http://prose.io/#demografijars/populationData-data/edit/master/meta/1-2-2.md"></a>
+  <a class="btn btn-primary" href="http://prose.io/#demografijars/populationData-data/edit/master/meta/1-2-2.md">Uredi metapodatke</a>
   
 
   
@@ -2117,11 +2117,11 @@ data-event-label="Change to Sources tab"
             
               <li>
                 
-                  <a href="mailto:bosnia-herzegovina.office@unfpa.org" target="_blank">menu.contact_us</a>
+                  <a href="mailto:bosnia-herzegovina.office@unfpa.org" target="_blank">Kontaktirajte nas</a>
                 
                 </li>
               <li>
-                <a href="/lat/about/cookies-and-privacy/">menu.cookies</a>
+                <a href="/lat/about/cookies-and-privacy/">Kolačići</a>
                 
                 </li>
               
@@ -2152,12 +2152,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Pretraživanje';</script>
 
-<script src='/assets/js/sdg.js?v=20220525134700'></script>
+<script src='/assets/js/sdg.js?v=20220525140120'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20220525134700"></script><script>
+    <script src="/assets/js/custom.js?v=20220525140120"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
