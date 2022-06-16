@@ -135,7 +135,7 @@
         },
         {
           "id": "1-4-4",
-          "title": "Average age at first marriage by sex",
+          "title": "Average age of spouses at first marriage",
           "description": "",
           "keywords": "",
           "href": "/1-4-4",
@@ -143,7 +143,7 @@
         },
         {
           "id": "1-4-5",
-          "title": "Average age at the time of divorce by sex",
+          "title": "Average age of husband and wife at divorce",
           "description": "",
           "keywords": "",
           "href": "/1-4-5",
@@ -271,7 +271,7 @@
         },
         {
           "id": "1-8-3",
-          "title": "Population estimates by city/municipality, age groups and sex",
+          "title": "Population estimates by age groups and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/1-8-3",
@@ -319,7 +319,7 @@
         },
         {
           "id": "2-1-5",
-          "title": "Female population aged 15 years and over by number of live-born children",
+          "title": "Female population aged 15 years and over by total number of liveborn children, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-1-5",
@@ -335,7 +335,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Population by city/municipality, ethnicity/nationality and sex",
+          "title": "Population by ethnic/national affiliation and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-2-1",
@@ -343,7 +343,7 @@
         },
         {
           "id": "2-2-2",
-          "title": "Population by city/municipality, religion and sex",
+          "title": "Population by religious affiliation and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-2-2",
@@ -351,7 +351,7 @@
         },
         {
           "id": "2-2-3",
-          "title": "Population by city/municipality, mother tongue and sex",
+          "title": "Population by mother tongue and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-2-3",
@@ -359,7 +359,7 @@
         },
         {
           "id": "2-3-1",
-          "title": "Households by city/municipality and number of members",
+          "title": "Households by number of household members, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-3-1",
@@ -367,7 +367,7 @@
         },
         {
           "id": "2-3-2",
-          "title": "Households by city/municipality and agricultural activity",
+          "title": "Households engaged in agricultural activities, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-3-2",
@@ -375,7 +375,7 @@
         },
         {
           "id": "2-4-1",
-          "title": "Population over 10 years of age by city/municipality, literacy and sex",
+          "title": "Population aged 10 and over by literacy and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-4-1",
@@ -383,7 +383,7 @@
         },
         {
           "id": "2-4-2",
-          "title": "Population over 15 years of age by city/municipality, educational attainment and sex",
+          "title": "Population aged 15 and over by educational attainment and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-4-2",
@@ -391,7 +391,7 @@
         },
         {
           "id": "2-5-1",
-          "title": "Population with disabilities by sex",
+          "title": "Persons with disabilities by sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/2-5-1",
@@ -903,7 +903,7 @@
         },
         {
           "id": "5-7-3",
-          "title": "Population over 10 years of age by city/municipality, literacy and sex",
+          "title": "Population aged 10 and over by literacy and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/5-7-3",
@@ -911,7 +911,7 @@
         },
         {
           "id": "5-7-4",
-          "title": "Population over 15 years of age by city/municipality, educational attainment and sex",
+          "title": "Population aged 15 and over by educational attainment and sex, city/municipality",
           "description": "",
           "keywords": "",
           "href": "/5-7-4",
