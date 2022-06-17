@@ -38,8 +38,16 @@
           "status": "complete"
         },
         {
-          "id": "1-2-4",
+          "id": "1-2-3",
           "title": "Однос полова при рођењу",
+          "description": "",
+          "keywords": "",
+          "href": "/cir/1-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-4",
+          "title": "Број порођаја адолесценткиња према старосним групама",
           "description": "",
           "keywords": "",
           "href": "/cir/1-2-4",
@@ -47,7 +55,7 @@
         },
         {
           "id": "1-2-5",
-          "title": "Број порођаја адолесценткиња према старосним групама",
+          "title": "global_indicators.1-2-5-title",
           "description": "",
           "keywords": "",
           "href": "/cir/1-2-5",
@@ -319,7 +327,7 @@
         },
         {
           "id": "2-1-6",
-          "title": "Коефицијенти зависности према полу",
+          "title": "global_indicators.2-1-6-title",
           "description": "",
           "keywords": "",
           "href": "/cir/2-1-6",

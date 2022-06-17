@@ -38,8 +38,16 @@
           "status": "complete"
         },
         {
-          "id": "1-2-4",
+          "id": "1-2-3",
           "title": "Odnos polova pri rođenju",
+          "description": "",
+          "keywords": "",
+          "href": "/lat/1-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-4",
+          "title": "Broj porođaja adolescentkinja prema starosnim grupama",
           "description": "",
           "keywords": "",
           "href": "/lat/1-2-4",
@@ -47,7 +55,7 @@
         },
         {
           "id": "1-2-5",
-          "title": "Broj porođaja adolescentkinja prema starosnim grupama",
+          "title": "global_indicators.1-2-5-title",
           "description": "",
           "keywords": "",
           "href": "/lat/1-2-5",
@@ -319,7 +327,7 @@
         },
         {
           "id": "2-1-6",
-          "title": "Koeficijenti zavisnosti prema polu",
+          "title": "global_indicators.2-1-6-title",
           "description": "",
           "keywords": "",
           "href": "/lat/2-1-6",

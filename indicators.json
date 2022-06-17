@@ -38,8 +38,16 @@
           "status": "complete"
         },
         {
-          "id": "1-2-4",
+          "id": "1-2-3",
           "title": "Sex ratio at birth",
+          "description": "",
+          "keywords": "",
+          "href": "/1-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-4",
+          "title": "Births by teenage mothers by age group",
           "description": "",
           "keywords": "",
           "href": "/1-2-4",
@@ -47,7 +55,7 @@
         },
         {
           "id": "1-2-5",
-          "title": "Births by teenage mothers by age group",
+          "title": "global_indicators.1-2-5-title",
           "description": "",
           "keywords": "",
           "href": "/1-2-5",
@@ -319,7 +327,7 @@
         },
         {
           "id": "2-1-6",
-          "title": "Dependency ratios by sex",
+          "title": "global_indicators.2-1-6-title",
           "description": "",
           "keywords": "",
           "href": "/2-1-6",
