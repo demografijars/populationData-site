@@ -104,7 +104,7 @@ var translations = {
 
         
     <title>
-        Žensko stanovništvo staro 15 i više godina prema ukupnom broju živorođene djece, gradovi/opštine - Indikatori za ciljeve održivog razvoja
+        Koeficijenti zavisnosti prema polu - Indikatori za ciljeve održivog razvoja
     </title>
 
 
@@ -131,7 +131,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220617084509">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220617085517">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -469,7 +469,7 @@ data-event-label="high"
             
             <span class="stat-number">2.1.5</span>
             
-            <span class="lead-copy">Žensko stanovništvo staro 15 i više godina prema ukupnom broju živorođene djece, gradovi/opštine</span>
+            <span class="lead-copy">Koeficijenti zavisnosti prema polu</span>
           </h1>
         </div>
       </div>
@@ -494,13 +494,13 @@ data-event-label="high"
   data-indicatorid='indicator_2-1-5'
   data-id="2-1-5"
   data-country="BiH"
-  data-charttitle="Žensko stanovništvo staro 15 i više godina prema ukupnom broju živorođene djece, gradovi/opštine"
+  data-charttitle="Koeficijenti zavisnosti prema polu"
   data-charttitles="null"
   data-measurementunit=""
   data-showdata="true"
-  data-graphtype="bar"
+  data-graphtype="line"
   data-geocoderegex=""
-  data-showmap="false"
+  data-showmap=""
   data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
@@ -544,7 +544,7 @@ data-event-label="high"
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Žensko stanovništvo staro 15 i više godina prema ukupnom broju živorođene djece, gradovi/opštine</caption>
+      <caption>Koeficijenti zavisnosti prema polu</caption>
       <thead>
         
       </thead>
@@ -555,8 +555,6 @@ data-event-label="high"
   </div>
 
   <div id="datatableFooter">
-    
-    <p>Izvor: RZS RS</p>
     
     
     
@@ -605,7 +603,7 @@ data-event-label="Change to Table tab"
 <div id="selectionsChart">
     <figure role="group">
         <div id="chart-canvas">
-            <h4 id="chart-heading" class="chart-title">Žensko stanovništvo staro 15 i više godina prema ukupnom broju živorođene djece, gradovi/opštine</h4>
+            <h4 id="chart-heading" class="chart-title">Koeficijenti zavisnosti prema polu</h4>
             <div style="display: none;" class="pyramid-sex-color">
                 <p><span class="male"></span>Muško</p>
                 <p><span class="female"></span>Žensko</p>
@@ -798,33 +796,53 @@ opensdg.chartConfigAlter(function(config, info) {
 </script>
 
 <script>
+   // For line charts, add the vertical line hover functionality.
    opensdg.chartConfigAlter(function (config, info) {
+      //set chart to start from minimum value, and default pointStyle and size
+      if (config.data.datasets[0] != null) {
+         let minStart = config.data.datasets[0].data[0];
+         config.options.scales.yAxes[0].ticks.suggestedMin = minStart;
+         config.data.datasets[0].pointStyle = "circle";
+         config.data.datasets[0].borderWidth = 2;
 
-      if (info.stackedDisaggregation) {
-         var overrides = {
-            options: {
-               scales: {
-                  xAxes: [{ stacked: true }],
-                  yAxes: [{ stacked: true }],
+         //remove legend from single label indicator
+         if (config.data.datasets[0].label === 'BiH') {
+            delete config.data.datasets[0].label;
+         };
+      }
+
+      var overrides = {
+         options: {
+            tooltips: {
+               intersect: true,
+               axis: 'y'
+            },
+         },
+         plugins: [{
+            beforeDatasetsDraw: function (chart) {
+               if (chart.tooltip._active && chart.tooltip._active.length) {
+                  var activePoint = chart.tooltip._active[0],
+                     ctx = chart.ctx,
+                     x = activePoint.tooltipPosition().x,
+                     topY = chart.scales['y-axis-0'].top,
+                     bottomY = chart.scales['y-axis-0'].bottom;
+
+                  // draw line
+                  ctx.save();
+                  ctx.beginPath();
+                  ctx.moveTo(x, topY);
+                  ctx.lineTo(x, bottomY);
+                  ctx.lineWidth = 2;
+                  ctx.strokeStyle = '#757575';
+                  ctx.setLineDash([5, 2]);
+                  ctx.stroke();
+                  ctx.restore();
                }
             }
-         };
-         // If we have stackedDisaggregation, we need to group datasets into stacks.
-         config.data.datasets.forEach(function (dataset) {
-            var disaggregation = $.extend({}, dataset.disaggregation);
-            // We're going to "stringify" each combination of disaggregations in order
-            // to place them in their own "stacks". To place "stacked" disaggregations
-            // into the same stack, we set them as "samestack" before stringifying.
-            // Note that the string "samestack" is completely arbitrary.
-            if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
-               disaggregation[info.stackedDisaggregation] = 'samestack';
-            }
-            // Use the disaggregation as a unique id for each stack.
-            dataset.stack = JSON.stringify(disaggregation);
-         });
-         // Add these overrides onto the normal config, and return it.
-         $.extend(true, config, overrides);
-      }
+         }],
+      };
+      // Add these overrides onto the normal config, and return it.
+      $.extend(true, config, overrides);
    });
 </script>
             </div>
@@ -836,9 +854,6 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionChartFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>Izvor:</dt>
-        <dd>RZS RS</dd>
         
 
         
@@ -875,9 +890,6 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>Izvor:</dt>
-        <dd>RZS RS</dd>
         
 
         
@@ -1118,10 +1130,6 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/demografijars/populationData-data/commit/6b212066e3399ab9c612fae69820e03ee022456f" target="_blank">
-                2022-05-28: see changes on GitHub <span class="visuallyhidden"></span>
-              </a>
-            
 
           
         </td>
@@ -1144,10 +1152,6 @@ data-event-label="Change to Sources tab"
             
             
 
-            
-              <a href="https://github.com/demografijars/populationData-data/commit/cfa0a753fcacb143bd0f3d67e13ac24a1e1ce219" target="_blank">
-                2022-06-17: see changes on GitHub <span class="visuallyhidden"></span>
-              </a>
             
 
           
@@ -1264,7 +1268,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Naziv indikatora </th>
         <td>
           
-            <p>Žensko stanovništvo staro 15 i više godina prema ukupnom broju živorođene djece, gradovi/opštine</p>
+            <p>Koeficijenti zavisnosti prema polu</p>
 
           
         </td>
@@ -1278,7 +1282,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Broj indikatora </th>
         <td>
           
-            <p>2.1.4</p>
+            
 
           
         </td>
@@ -1292,7 +1296,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Naziv podcilja </th>
         <td>
           
-            <p>Demografski podaci</p>
+            
 
           
         </td>
@@ -1334,7 +1338,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN-ov označeni nivo podataka </th>
         <td>
           
-            <p>1</p>
+            
 
           
         </td>
@@ -1348,7 +1352,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN agencija odgovorna za prikupljanje podataka </th>
         <td>
           
-            <p>Food and Agriculture Organisation of the United Nations (FAO)</p>
+            
 
           
         </td>
@@ -1367,10 +1371,6 @@ data-event-label="Change to Sources tab"
             
             
 
-            
-              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-02-01-02.pdf" target="_blank">
-                United Nations Sustainable Development Goals Metadata (PDF 426 KB) <span class="visuallyhidden"></span>
-              </a>
             
 
           
@@ -1491,271 +1491,6 @@ data-event-label="Change to Sources tab"
 
 
 
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      <table class="table">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      <tr>
-        <th scope="row">Organizacija </th>
-        <td>
-          
-            <p>RZS RS</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Periodičnost </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Posljednji dostupni podaci </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Geografska pokrivenost </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Link do izvora podataka </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://unstats.un.org/sdgs/indicators/database/" target="_blank">
-                Link to source <span class="visuallyhidden"></span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Datum izdavanja </th>
-        <td>
-          
-            
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Sljedeće izdanje </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Statistička klasifikacija </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Kontakt podaci </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Ostale informacije </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </div>
-    
-  </div>
-
 
 </div>
 
@@ -1836,12 +1571,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Pretraživanje';</script>
 
-<script src='/assets/js/sdg.js?v=20220617084509'></script>
+<script src='/assets/js/sdg.js?v=20220617085517'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20220617084509"></script><script>
+    <script src="/assets/js/custom.js?v=20220617085517"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
