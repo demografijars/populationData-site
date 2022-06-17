@@ -39,7 +39,7 @@
         },
         {
           "id": "1-2-3",
-          "title": "Age-specific fertility rate",
+          "title": "global_indicators.1-2-3-title",
           "description": "",
           "keywords": "",
           "href": "/1-2-3",
@@ -311,7 +311,7 @@
         },
         {
           "id": "2-1-4",
-          "title": "Population pyramid",
+          "title": "global_indicators.2-1-4-title",
           "description": "",
           "keywords": "",
           "href": "/2-1-4",
