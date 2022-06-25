@@ -131,7 +131,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220625130954">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220625131342">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -493,7 +493,7 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_1-1-2'
   data-id="1-1-2"
-  data-country="BiH"
+  data-country="RS"
   data-charttitle="Стопа природног прираштаја"
   data-charttitles="null"
   data-measurementunit=""
@@ -1124,7 +1124,7 @@ opensdg.chartConfigAlter(function(config, info) {
          config.data.datasets[0].borderWidth = 2;
 
          //remove legend from single label indicator
-         if (config.data.datasets[0].label === 'BiH') {
+         if (config.data.datasets[0].label === 'RS') {
             delete config.data.datasets[0].label;
          };
       }
@@ -2172,12 +2172,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Претраживање';</script>
 
-<script src='/assets/js/sdg.js?v=20220625130954'></script>
+<script src='/assets/js/sdg.js?v=20220625131342'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20220625130954"></script><script>
+    <script src="/assets/js/custom.js?v=20220625131342"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
