@@ -6,12 +6,12 @@ language: sr
 standalone_indicators:
     - gross-domestic-product
     - revenue-from-indirect-taxes
-    - RS-exports-imports
+    - bih-exports-imports
     - industrial-turnover
     - monthly-producer-price
     - retail-trade-indices
     - average-monthly-earnings
-    - labour-force-of-RS
+    - labour-force-of-bih
     - road-transport
     - cross-border-traffic
     - tourist-nights
