@@ -51,19 +51,6 @@ $(document).ready(function () {
          //remove year in table pyramid, and chart legend
          $('div#plotLegend').css('display', 'none');
          $('.data-view .nav-item:last-child').css('display', 'none');
-      } else if (url.search("2-1-4") != -1) {
-         //add age-range-pyramid and helper class
-         $('.tab-content #chart-canvas').append('<ul class="pyramid-age-range"><li>100-104</li><li>95-99</li><li>90-94</li><li>85-89</li><li>80-84</li><li>75-79</li><li>70-74</li><li>65-69</li><li>60-64</li><li>55-59</li><li>50-54</li><li>45-49</li><li>40-44</li><li>35-39</li><li>30-34</li><li>25-29</li><li>20-24</li><li>15-19</li><li>10-14</li><li>5-9</li><li>0-4</li></ul>');
-         $('#chart-heading').addClass('pyramid');
-         //show pyramid legend
-         $('.pyramid-sex-color').css('display', 'block');
-         //hide toolbar + legend, and rename unit measurement
-         $('#toolbar').css('display', 'none');
-         $('div#plotLegend').css('display', 'none');
-         $('#units h4').css('display', 'none');
-         $('.projection-pyramid').css('display', 'none');
-         //remove table tab 
-         $('.data-view .nav-item:last-child').css('display', 'none');
       } else {
          $('.pyramid-units').css('display', 'none');
       }
