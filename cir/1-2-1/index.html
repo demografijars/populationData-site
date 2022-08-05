@@ -131,7 +131,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220805071712">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220805080805">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -487,7 +487,30 @@ data-event-label="high"
 <div class="row" id="page-content">
   <div class="col-xs-12">
     <hr />
-<p>indicator_number: 1.2.1
+<p>goal_meta_link_text: UN metadata
+reporting_status: complete
+data_non_statistical: false
+data_show_map: false
+graph_type: line
+source_active_1: true
+source_url_text_1: Link to source
+source_active_2: false
+source_url_text_2: Link to Source
+source_active_3: false
+source_url_3: Link to source
+source_active_4: false
+source_url_text_4: Link to source
+source_active_5: false
+source_url_text_5: Link to source
+source_active_6: false
+source_url_text_6: Link to source
+published: false
+title: Untitled
+national_indicator_description: 1.2.1_meta_natality_rate
+computation_units: 1.2.1_meta_promil
+computation_definitions: 1.2.1_meta_def_natality_rate
+computation_calculations: 1.2.1_meta_calculations
+indicator_number: 1.2.1
 sdg_goal: ‘1’
 data_non_statistical: false
 goal_meta_link: 
@@ -914,6 +937,8 @@ computation_calculations: 1.2.1_meta_calculations</p>
 
   <div id="datatableFooter">
     
+    <p>Извор: RZS RS</p>
+    
     
     
     <p>Мјерна јединица: Промил</p>
@@ -1215,6 +1240,9 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
+        <dt>Извор:</dt>
+        <dd>RZS RS</dd>
+        
 
         
 
@@ -1253,6 +1281,9 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
+        
+        <dt>Извор:</dt>
+        <dd>RZS RS</dd>
         
 
         
@@ -1523,7 +1554,7 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/demografijars/populationData-data/commit/5885ed1ad7caf15a1c839aa95d499469119c9ff7" target="_blank">
+              <a href="https://github.com/demografijars/populationData-data/commit/b0509dbbb3718e79ec5fa832a5a3e5c1e13254ea" target="_blank">
                 2022-08-05: see changes on GitHub <span class="visuallyhidden"></span>
               </a>
             
@@ -1670,7 +1701,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Назив подциља </th>
         <td>
           
-            
+            <p>Фертилитет</p>
 
           
         </td>
@@ -1712,7 +1743,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN-ов означени ниво података </th>
         <td>
           
-            
+            <p>1</p>
 
           
         </td>
@@ -1726,7 +1757,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN агенција одговорна за прикупљање података </th>
         <td>
           
-            
+            <p>World Bank (WB)</p>
 
           
         </td>
@@ -1745,6 +1776,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-02-01.pdf" target="_blank">
+                UN metadata <span class="visuallyhidden"></span>
+              </a>
             
 
           
@@ -1918,7 +1953,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Oрганизација </th>
         <td>
           
-            
+            <p>RZS RS</p>
 
           
         </td>
@@ -2206,12 +2241,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Претраживање';</script>
 
-<script src='/assets/js/sdg.js?v=20220805071712'></script>
+<script src='/assets/js/sdg.js?v=20220805080805'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20220805071712"></script><script>
+    <script src="/assets/js/custom.js?v=20220805080805"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
