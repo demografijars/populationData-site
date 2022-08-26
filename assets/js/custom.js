@@ -11,14 +11,8 @@ $(document).ready(function () {
    $("#national tr:nth-child(11)").remove();
 });
 
-$(document).ready(function () {
-   // var date = '';
-   // $("#national td a").each(function () {
-   //    date = $(this).text().substring(17, 27);
-   //    $(this).html(date).removeAttr("href");
-   // });
-
-   //remove link from dates
+  //remove link from dates
+$(document).ready(function () { 
    let date1 = $("#national tr:nth-last-child(1) a ").text().substring(17, 27);
    let date2 = $("#national tr:nth-last-child(2) a ").text().substring(17, 27);
    $("#national tr:nth-last-child(1) a ").removeAttr("href");
