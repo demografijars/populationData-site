@@ -33,7 +33,7 @@ $(document).ready(function () {
    });
 });
 
-//pyramid chart alternations
+//pyramid chart alterations
 $(document).ready(function () {
    setTimeout(function () {
       var url = window.location.href;
