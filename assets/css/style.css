@@ -2759,6 +2759,9 @@ header .container {
         top: 76px;
         right: 10px;
         font-size: 12px; } }
+    @media (max-width: 991px) {
+      header .container .supp-by {
+        top: 70px; } }
     header .container .supp-by img {
       padding-left: 10px; }
       @media (max-width: 991px) {
@@ -2843,9 +2846,9 @@ header {
   header .navbar-brand {
     display: block;
     max-width: 230px; }
-    @media screen and (max-width: 420) {
+    @media screen and (max-width: 420px) {
       header .navbar-brand {
-        max-width: 170px; } }
+        max-width: 210px; } }
     header .navbar-brand:focus {
       outline: unset !important; }
   header .navbar ul.navbar-nav > li > a {
@@ -3003,7 +3006,7 @@ html:lang(lat) #main-content h1 {
     min-height: 220px; }
 
   .logo-and-mobile-widgets {
-    min-height: 140px; }
+    min-height: 130px; }
 
   #search {
     width: 805px; } }
