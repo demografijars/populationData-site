@@ -59,6 +59,10 @@ header .container {
             font-size: 12px;
         }
 
+        @media (max-width: 991px) {
+           top: 70px;
+        }
+
         img {
             padding-left: 10px;
 
@@ -185,8 +189,8 @@ header {
         display: block;
         max-width: 230px;
 
-        @media screen and (max-width: 420) {
-           max-width: 170px;
+        @media screen and (max-width: 420px) {
+           max-width: 210px;
         }
 
         &:focus {
@@ -464,7 +468,7 @@ html:lang(lat)  {
     }
 
     .logo-and-mobile-widgets {
-        min-height: 140px;
+        min-height: 130px;
     }
 
     #search {
