@@ -1,19 +1,19 @@
 name: Deploy to staging
- 
+
 on:
   push:
     branches:
-      - develop
+      - master
   schedule:
     - cron: '10 0 * * *'
   repository_dispatch:
     types: rebuild-staging
- 
+
 jobs:
   build:
- 
+
     runs-on: ubuntu-latest
- 
+
     steps:
     - uses: actions/checkout@v1
     - name: Set up Ruby 2.6
